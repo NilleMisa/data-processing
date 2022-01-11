@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/forms.css" />
  </head>
  <body>
      <header>
@@ -19,7 +20,7 @@
      </header>
      
    <main class="wrapper">
-    <form method="get" action="">
+    <form method="get" action="" class="main-form">
         <div>
             <label for="FirstName">First Name</label>: <br />
             <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required" title="First Name is a required field" autofocus/>
@@ -52,6 +53,18 @@
                 <label><input type="radio" name="JoinMailingList" value="Yes" />Yes<br /></label>
                 <label><input type="radio" name="JoinMailingList" value="No" />No </label>
             </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Interested in?</legend>
+                <label><input type="checkbox" name="InterestedIn" value="Website" />Website<br /></label>
+                <label><input type="checkbox" name="InterestedIn" value="OnlineCalender" />Online Calender<br /></label>
+                <label><input type="checkbox" name="InterestedIn" value="ContactForm" />Contact Form<br /></label>
+                <label><input type="checkbox" name="InterestedIn" value="Lollipops" />Complimentary Lollipops</label>
+            </fieldset>
+        </div>
+        <div>
+
         </div>
         <div>
             <input type="submit" />
