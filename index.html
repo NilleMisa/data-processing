@@ -20,14 +20,42 @@
      </header>
      
    <main class="wrapper">
+       <div id="output">Output goes here>
     <form method="get" action="" class="main-form">
+        <h3>Buy a Widget</h3>
+       
+        <div id="widgets">
+            <div>
+                <b>Widget</b><br />
+                <p>Our Widgets are spring loaded and need no batteries!</p>
+                <p>At $3.99 they're a bargain!</p>
+                <p><label><input type="checkbox" name="Cart" value="Widget" />Add to cart<br /></label></p>
+                <div class="pic"><img src="images/widget.png" /></div>
+            </div>
+            <div>
+                <b>Sprocket</b><br />
+                <p>Our Sprockets are well made and hold up to extreme pressure!</p>
+                <p>They only cost $5.99!</p>
+                <p><label><input type="checkbox" name="Cart" value="Sprocket" />Add to cart<br /></label></p>
+                <div class="pic"><img src="images/sprocket.png" /></div>
+            </div>
+            <div>
+                <b>Thingy</b><br />
+                <p>Our Thingys have many uses, and people love them.</p>
+                <p>Such a deal at $1.99!</p>
+                <p><label><input type="checkbox" name="Cart" value="Thingy" />Add to cart<br /></label></p>
+                <div class="pic"><img src="images/thingy.png" /></div>
+            </div>
+        </div>
+       
+        <h3>Shipping Information</h3>
         <div>
             <label for="FirstName">First Name</label>: <br />
-            <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required" title="First Name is a required field" autofocus/>
+            <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required="required" title="First Name is a required field" autofocus/>
         </div>
         <div>
             <label for="LastName">Last Name</label>: <br />
-            <input type="text" name="LastName" id="LastName" placeholder="Last Name" required="required" title="Last Name is a required field"/>
+            <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required="required" title="Last Name is a required field"/>
         </div>
         <div>
             <label for="Email">Email</label>: <br />
@@ -50,17 +78,17 @@
         <div>
             <fieldset>
                 <legend>Would you like to join our mailing list?</legend>
-                <label><input type="radio" name="JoinMailingList" value="Yes" />Yes<br /></label>
-                <label><input type="radio" name="JoinMailingList" value="No" />No </label>
+                <label><input type="radio" name="Join_Mailing_List" value="Yes" />Yes<br /></label>
+                <label><input type="radio" name="Join_Mailing_List" value="No" />No </label>
             </fieldset>
         </div>
         <div>
             <fieldset>
                 <legend>Interested in?</legend>
-                <label><input type="checkbox" name="InterestedIn" value="Website" />Website<br /></label>
-                <label><input type="checkbox" name="InterestedIn" value="OnlineCalender" />Online Calender<br /></label>
-                <label><input type="checkbox" name="InterestedIn" value="ContactForm" />Contact Form<br /></label>
-                <label><input type="checkbox" name="InterestedIn" value="Lollipops" />Complimentary Lollipops</label>
+                <label><input type="checkbox" name="Interested_In" value="Website" />Website<br /></label>
+                <label><input type="checkbox" name="Interested_In" value="OnlineCalender" />Online Calender<br /></label>
+                <label><input type="checkbox" name="Interested_In" value="ContactForm" />Contact Form<br /></label>
+                <label><input type="checkbox" name="Interested_In" value="Lollipops" />Complimentary Lollipops</label>
             </fieldset>
         </div>
         <div>
@@ -70,6 +98,7 @@
             <input type="submit" />
         </div>
     </form>
+    </div>
      <footer>
       <p><small>&copy; 2021 by 
           YOUR NAME HERE, All Rights Reserved ~ 
@@ -78,6 +107,6 @@
      </p>
     </footer>
   </main>
-  <script src="js/main.js"></script>     
+  <script src="js/data-processing.js"></script>     
  </body>
 </html>
